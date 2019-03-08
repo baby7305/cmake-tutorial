@@ -1,0 +1,2 @@
+ADD_LIBRARY(libhello say.c)
+SET_TARGET_PROPERTIES(libhello PROPERTIES OUTPUT_NAME "hello")
