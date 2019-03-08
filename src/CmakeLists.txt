@@ -1,3 +1,4 @@
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib-say)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 add_executable(hello hello.c)
 TARGET_LINK_LIBRARIES(hello libhello)
