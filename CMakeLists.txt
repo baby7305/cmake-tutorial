@@ -3,4 +3,8 @@ project(hello C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(hello hello.c say.c)
+ADD_LIBRARY(libhello say.c)
+add_executable(hello hello.c)
+
+SET_TARGET_PROPERTIES(libhello PROPERTIES OUTPUT_NAME "hello")
+TARGET_LINK_LIBRARIES(hello libhello)
